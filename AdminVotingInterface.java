@@ -2,6 +2,8 @@ package AdminVoting;
 
 import java.rmi.Remote;
 import java.rmi.RemoteException;
+import java.util.ArrayList;
+
 import system.*;
 
 /**
@@ -10,4 +12,6 @@ import system.*;
 public interface AdminVotingInterface extends Remote {
 
     public boolean addCampaign(Campaign campaign) throws RemoteException;
+
+    public ArrayList<Report> getReports() throws RemoteException;
 }
